@@ -8,13 +8,14 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, Accessible {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.setupUI()
         self.setupBindings()
+        generateAccessibilityIdentifiers()
     }
     
     @objc func setupUI() {
