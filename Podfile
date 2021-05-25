@@ -21,16 +21,6 @@ target 'ToDoList' do
   pod 'ImageViewer.swift'
   pod 'BulletinBoard'
 
-  target 'ToDoListWidget' do
-     inherit! :search_paths
-  end
-
-  target 'WatchApp Extension' do
-     platform :watchos, '6.0'
-
-     pod 'Realm'
-     pod 'RealmSwift'
-   end
 end
 
 post_install do |installer|
